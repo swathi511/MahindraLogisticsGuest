@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@+id/al_clayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_new_g_bg">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- <LinearLayout
+             android:id="@+id/container_toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <include
+                 android:id="@+id/toolbar"
+                 layout="@layout/toolbar" />
+             <include
+                 android:id="@+id/drawer_layout"
+                 layout="@layout/drawerlayout" />
+         </LinearLayout>
+ -->
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:id="@+id/ac_iv_logo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/mlogo"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/al_tv_new_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chauffeur Driven Car Rental Service"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_below="@+id/al_tv_title"
+
+            android:layout_marginTop="12dp"
+
+            />
+
+        <TextView android:id="@+id/al_tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer App"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_below="@+id/al_tv_title"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="12dp"
+
+            />
+        <!--<TextView-->
+        <!--android:id="@+id/al_tv_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/al_ll"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="12dp"-->
+        <!--android:text="mahindra"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textColor="@color/colorRed"-->
+        <!--android:textSize="40sp"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/al_ll"-->
+        <!--android:layout_alignRight="@+id/al_ll"-->
+        <!--android:layout_alignTop="@+id/linearLayout"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:text="Logistics Guest"-->
+        <!--android:textColor="@color/colorGray"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold|italic" />-->
+
+        <LinearLayout android:id="@+id/al_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:padding="8dp"
+            >
+            <EditText
+                android:id="@+id/al_et_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Username"
+                android:layout_margin="10dp"
+                android:padding="12dp"
+                android:background="@drawable/login_bg"
+                android:textColorHint="#000000"
+                android:inputType="textEmailAddress"
+                android:drawableRight="@drawable/uuser"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"/>
+            <EditText
+                android:id="@+id/al_et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:background="@drawable/login_bg"
+                android:layout_margin="10dp"
+                android:padding="12dp"
+                android:textColorHint="#000000"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/pass"/>
+
+            <EditText android:id="@+id/al_et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint= "company_code"
+                android:layout_margin="10dp"
+                android:padding="12dp"
+                android:textColorHint="#8f8f8f"
+                android:textColor="#4e4e4e"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/al_bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login"
+                android:padding="12dp"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:background="@color/colorGray"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+
+
+        <TextView android:id="@+id/al_tv_fpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Username/Password ?"
+            android:textColor="@color/colorBlack"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/al_ll"
+
+
+            />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

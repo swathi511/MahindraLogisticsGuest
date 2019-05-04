@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:id="@+id/fmt_rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <ImageView android:id="@+id/ffd_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView android:id="@+id/ffbd_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Feedback for # ****"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:id="@+id/ffd_tv_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:padding="8dp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ffd_radiogroup1"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:checked="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radio_yes1"
+                android:layout_weight="1"
+                
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_no1"
+                android:layout_weight="1"
+                
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:id="@+id/ffd_tv_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:padding="8dp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ffd_radiogroup2"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:checked="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radio_yes2"
+                android:layout_weight="1"
+                
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_no2"
+                android:layout_weight="1"
+                
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView android:id="@+id/ffd_tv_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:padding="8dp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ffd_radiogroup3"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:checked="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radio_yes3"
+                android:layout_weight="1"
+                
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_no3"
+                android:layout_weight="1"
+                
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="18dp">
+
+        <TextView android:id="@+id/ffd_tv_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 4"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:padding="8dp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ffd_radiogroup4"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:checked="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radio_yes4"
+                android:layout_weight="1"
+                
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_no4"
+                android:layout_weight="1"
+                
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate your booking !"
+        android:textColor="#000000"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <RatingBar android:id="@+id/ffb_rbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="5"
+        android:isIndicator="false"
+        android:clickable="true"
+
+        android:stepSize="1"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:theme="@style/RatingBar"
+        android:scaleX="0.9"
+        android:scaleY="0.9"/>
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/bg_stroke_black"
+        android:maxLines="5"
+        android:inputType="text"
+        android:id="@+id/fnb_et_office_add"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:layout_margin="16dp"
+        android:hint="Enter Comments..."
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:textColor="#5b5858"/>-->
+
+    <EditText android:id="@+id/ffd_et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Leave a Comment"
+        android:layout_margin="24dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorAsh"
+        android:background="@drawable/rect_ash_stroke_bg_single_line"
+        android:lines="5"
+        android:gravity="left"
+        android:padding="8dp"
+        android:maxLength="250"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:id="@+id/ffd_submit"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="@drawable/butn_save"
+        android:padding="18dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

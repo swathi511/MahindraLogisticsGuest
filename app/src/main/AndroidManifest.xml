@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjsoftware.mahindralogisticsguest">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDObQHcQyOJ40bO6Su2TdbsAEs99NoqeWI" /> <!-- release -->
+            <!--android:value="AIzaSyAdUvJeO1Ww_ttYSyowaM4OqM32zT7FeQE" />--> <!-- debug -->
+         <!-- release -->
+
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.HomeActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.VehicleActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.ChangepasswordActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.BookingListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.hjsoftware.mahindralogisticsguest.activity.SpecificBookingActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TrackBookingActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MapTrackingActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FeedbackListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.FeedbackActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.ForgotPasswordActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll1"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="0.6dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/text_fromdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="From Date"
+
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:layout_weight="1"
+
+
+                        />
+
+
+                    <ImageButton
+                        android:id="@+id/button_select"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/calendar_white"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edit_fromdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text_fromdate"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rect_black_bg"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:hint="Select From Date"
+                    android:textColorHint="#e0e0e0"
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/text_todate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="To Date"
+
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:layout_weight="1"
+
+
+                        />
+
+
+                    <ImageButton
+                        android:id="@+id/buton_select"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/calendar_white"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/edit_Todate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text_fromdate"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rect_black_bg"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:hint="Select To Date"
+                    android:textColorHint="#e0e0e0"
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Booking Status"
+
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:layout_weight="1"
+
+
+                        />
+
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/info_white"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"/>
+
+                </LinearLayout>
+
+                <Spinner android:id="@+id/spinner_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:background="@drawable/bg_spinner"
+                    android:padding="4dp"
+
+                    >
+                </Spinner>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:id="@+id/textview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET BOOKINGS"
+            android:background="@drawable/bg_white_solid_red"
+            android:padding="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/bt_solid_bg"
+        android:layout_below="@+id/ll1">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
